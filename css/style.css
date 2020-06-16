@@ -216,7 +216,17 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header__site-navigation--current {
-  border-bottom: 2px solid #fb565a;
+  position: relative;
+}
+
+.main-header__site-navigation--current::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #fb565a;
 }
 
 .main-header__basket {
